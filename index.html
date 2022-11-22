@@ -26,7 +26,7 @@
         <a class="logo" href="./index.html">Web<span class="header-studio">Studio</span></a>
         <nav>
           <ul class="list navigation">
-            <li><a href="#">Agencja</a></li>
+            <li><a class="agencja-current" href="#">Agencja</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
@@ -54,7 +54,7 @@
     <main>
       <section class="section-1">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługe</button>
+        <button class="order-button" type="button" data-modal-open>Zamów usługe</button>
       </section>
       <section class="section-2 container section-style">
         <div class="item-1-s2">
@@ -144,7 +144,10 @@
         <div class="item-2-s2">
           <h2>Czym się zajmujemy</h2>
           <ul class="list">
-            <li>
+            <li class="presentation-block">
+              <div class="presentation-background">
+                <a class="presentation-info">APLIKACJE KOMPUTEROWE</a>
+              </div>
               <img
                 src="./images/image(2).jpg"
                 alt="Implementation of algorithms"
@@ -152,10 +155,16 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="presentation-block">
+              <div class="presentation-background">
+                <a class="presentation-info">APLIKACJE MOBILNE</a>
+              </div>
               <img src="./images/image(1).jpg" alt="Mobile applications" width="370" height="294" />
             </li>
-            <li>
+            <li class="presentation-block">
+              <div class="presentation-background">
+                <a class="presentation-info">APLIKACJE MOBILNE</a>
+              </div>
               <img src="./images/image(3).jpg" alt="Application styling" width="370" height="294" />
             </li>
           </ul>
@@ -525,5 +534,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg height="18" width="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-style"></form>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
