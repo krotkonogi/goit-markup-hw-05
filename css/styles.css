@@ -120,7 +120,9 @@ body {
     color: var(--top-bg-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color color box-shadow;
 }
 
 .logo {
@@ -199,14 +201,18 @@ body {
 .contact-align:focus .address{ 
     fill: var(--highlight-color);
     color: var(--highlight-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill color;
 }
 
 .contact-align:hover .icon,
 .contact-align:focus .icon{
     fill: var(--highlight-color);
     color: var(--highlight-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill color;
 }
 
 .navigation li:not(:last-child) {margin-right: 46px;}
@@ -226,7 +232,9 @@ body {
 .navigation>li>a:hover,
 .navigation>li>a:focus {
     color: var(--highlight-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
 }
 
 .section-1 {
@@ -274,6 +282,7 @@ body {
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color color cursor;
 }
 
 .list-1 {
@@ -381,7 +390,9 @@ body {
 .section-3 svg:focus {
     background-color: var(--highlight-color);
     fill: var(--top-bg-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property:backfround-color fill;
 }
 
 .footer svg {
@@ -398,7 +409,9 @@ body {
 .footer svg:focus {
     background-color: var(--highlight-color);
     fill: var(--top-bg-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
 }
 
 .footer-social {display: flex;}
@@ -435,7 +448,9 @@ body {
 .section-4 svg:hover,
 .section-4 svg:focus {
     outline: 1px solid var(--highlight-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: outline;
 }
 
 .section-4 ul {
@@ -455,7 +470,9 @@ body {
 .icon svg:hover,
 .icon svg:focus {
     fill: var(--highlight-color);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
 }
 
 .list-portfolio {
@@ -471,7 +488,9 @@ body {
 .list-portfolio li:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: all 0.2s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
 }
 
 .list-portfolio figure {
@@ -523,7 +542,9 @@ body {
     bottom: 0;
     top: 0;
     transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform opacity;
 }
 
 .modal-title {
@@ -566,7 +587,9 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 20%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: width height opacity;
 }
 
 .is-hidden{
@@ -602,10 +625,12 @@ body {
 
 .figure-photo-portfolio:hover .portfolio-photo-overlay {
     transform: translate(0%, -100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: var(--highlight-color);
     height: 101%;
     width: 101%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: height width transform background;
 }
 
 .agencja-current {
